@@ -23,5 +23,10 @@ namespace CSBank
 
 		public abstract bool Withdraw(double amount);
 
+		public BankCard NewCard(string cardNumber)
+		{
+			return new BankCard(Owner, balance, cardNumber);
+		}
+
 	}
 }
