@@ -10,10 +10,14 @@ namespace CSBank
 	{
 		double creditLimit;
 
+
+
 		public CreditAccount(Owner owner, double creditLimit) : base(owner)
 		{
 			this.creditLimit = creditLimit;
 		}
+
+		public double CreditLimit { get; }
 
 		public override bool Withdraw(double amount)
 		{
