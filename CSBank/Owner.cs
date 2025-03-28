@@ -8,12 +8,7 @@ namespace CSBank
 {
 	internal sealed class Owner
 	{
-		string ownerName;
-
-		public Owner(string ownerName)
-		{
-			OwnerName = ownerName;
-		}
+		public string ownerName;
 
 		public string OwnerName { get => ownerName; set => ownerName = value; }
 	}
