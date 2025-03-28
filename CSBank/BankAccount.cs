@@ -10,7 +10,7 @@ namespace CSBank
 	{
 		double balance;
 
-		public double Balance { get => balance; }
+		public double Balance { get; protected set; }
 
 		protected BankAccount(Owner owner) : base(owner)
 		{
